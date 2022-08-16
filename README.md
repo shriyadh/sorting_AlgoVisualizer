@@ -122,6 +122,7 @@ All remaining features were chosen to be stretch goals after we successfully imp
 ## Creating the Benchmark Graph
 
 ![](https://github.com/shriyadh/sorting_AlgoVisualizer/blob/main/rrrr.png)
+
 First, to choose the visualization library to best fit our needs, we picked NumPy, Pandas x Matplotlib, and Plotly and tested each library for how fast and how close we can implement a bar chart we put together as an interface mockup. NumPy turned out to be lacking in features to implement detailed bar charts as we wanted, while Matplotlib and Plotly both were great options and allowed for all the features that we needed. Between Plotly and Matplotlib, Plotly looked like the best candidate since it has additional features such as displaying the results on the interactive webpage, showing additional information for each bar on mouse hover, and allowing to add buttons to hide/show the relevant bar charts. We created a Proof of Concept implementation with Plotly and chose it as a framework to work with in this phase of the project.
 We initially decided to use pre-existing implementations of the algorithms and test them out using small inputs for the code. We realized that the existing implementations would not be ideal for handling large datasets so we recoded the algorithm using a uniform template for inputs as well as ensuring they can work on large data sets of any given size. Some things we needed to account for was using iterative methods over recursive to avoid reaching memory mark and using data structures that used minimal space for the dataset. 
 
